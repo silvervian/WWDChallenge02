@@ -1,0 +1,95 @@
+header {
+  display: flex;
+  background: 
+  url(../../img/scroll.png) 50% 90% no-repeat,
+  url(../../img/strawberry.png) center; 
+  // background-position: center;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+.logo {
+  font-size: 5rem;
+  font-family: 'Pacifico', cursive;
+  color: #262626;
+}
+
+.nav {
+  background-color: rgba(255,255,255,.8);
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  height: 10rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  
+  &__item {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+    padding: .5rem 2rem;
+
+    & a {
+      padding: .5rem 0;
+    }
+
+    &--active a {
+      border-top: 3px solid #ff6033;
+    }
+  }
+}
+
+.info-box {
+  // margin-left: 16rem;
+  align-self: center;
+  width: 36.5rem;
+  &__header {
+    font-size: 6rem;
+    color: #262626;
+    font-family: "Raleway";
+  }
+
+  &__paragraph {
+    margin: 1rem 0 2.5rem 0;
+    font-size: 1.7rem;
+    line-height: 27px;
+    color: #262626;
+    font-family: "Raleway";
+    font-weight: 300;
+  }
+}
+
+.invisible {
+  width: 50rem;
+  height: 50rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  padding: 1.5rem 2rem;
+  outline: none;
+  overflow: visible;
+
+  &--1 {
+    background-color: #ff6033;
+  }
+}
+
+
+
+
