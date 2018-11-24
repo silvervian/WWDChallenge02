@@ -12,6 +12,10 @@
   color: #ffffff;
   font-family: "Raleway";
   font-weight: 600;
+
+  @include media(small) {
+    font-size: 6rem;
+  } 
   
   @media (max-width: 750px) {
     padding: 2rem;

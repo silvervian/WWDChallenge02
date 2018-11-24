@@ -24,8 +24,15 @@
     align-self: center;
     grid-column: 2 / 3;
     @media (max-width: 768px) {
-      padding-left: 14rem;
+      width: 70%;
+      margin: 0 auto;
+      justify-self: center;
     }
+
+    @include media(xsmall) {
+      width: 100%;
+    }
+
     @media (max-width: 425px) {
       padding-left: 0;
     }

@@ -13,8 +13,15 @@ html {
     @include media(large) { // width < 1200?
         font-size: 56.25%; //1 rem = 9px, 9/16 = 90%
     }
+    @include media(medium) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 90%
+    }
 
     @include media(small) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 80%
+    }
+
+    @include media(xsmall) { // width < 900?
         font-size: 50%; //1 rem = 8px, 8/16 = 80%
     }
     
@@ -33,5 +40,6 @@ a {
 .icon {
     width: 6rem;
     height: 6rem;
+    padding: 2rem;
 }
 

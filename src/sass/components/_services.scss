@@ -3,14 +3,35 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  background: #70BFFF url(../../img/tomato.png) no-repeat 80% 60%;
+  background: #70BFFF url(../../img/tomato.png) no-repeat 90% 60%;
   height: 80rem;
+
+  @include media(medium) {
+    background: #70BFFF url(../../img/tomato.png) no-repeat 95% 60%;
+  }
+
+  @include media(small) {
+    flex-direction: column;
+    background: #70BFFF url(../../img/tomato.png) no-repeat center;
+    height: 70rem;
+  }
+
 
   &__offert {
     display: flex;
+    // width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 44rem;
+
+    @include media(small) {
+      width: 80%;
+    }
+
+    @include media(xsmall) {
+      width: 100%;
+    }
   }
 }
 
