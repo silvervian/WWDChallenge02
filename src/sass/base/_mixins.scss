@@ -1,0 +1,37 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 576px:      Phone
+576 - 768px:    Tablet portrait
+768 - 992px:    Tablet landscape
+992 - 1200px:   Small Desktop
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- xsmall
+- small
+- medium
+- large
+- bdesktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin media($point) {
+    @if $point == xsmall {
+        @media only screen and (max-width: 36em) { @content };    //576px
+    }
+    @if $point == small {
+        @media only screen and (max-width: 48em) { @content };     //768px
+    }
+    @if $point == medium {
+        @media only screen and (max-width: 62em) { @content };     //992px
+    }
+    @if $point == large {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $point == bdesktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}

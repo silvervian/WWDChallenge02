@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,600,900');
+
+.main {
+  font-size: 6rem;
+  color: #262626;
+  font-family: "Raleway";
+  font-weight: 900;
+}
+
+.secondary {
+  font-size: 9rem;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 600;
+  
+  @media (max-width: 750px) {
+    padding: 2rem;
+    // font-size: 7rem;
+  }
+}

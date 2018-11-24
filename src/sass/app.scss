@@ -1,6 +1,9 @@
-@import 'components/base';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/typography';
+
+
+@import 'components/buttons';
 @import 'components/header';
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400');
+@import 'components/about';
+@import 'components/services';

@@ -1,0 +1,50 @@
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all .1s;
+
+  &:active {
+    transform: translateY(3px);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  }
+
+  &--1 {
+    background-color: #ff6033;
+  }
+}
+
+.services__btn {
+  display: flex;
+  background: #fff;
+  width: 50rem;
+  height: 10rem;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: .2s all;
+
+  &:active {
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  }
+  &-name {
+    border-right: 2px solid #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: #262626;
+    font-family: "Raleway";
+    font-weight: 600;
+  }
+
+  &-image {
+    padding: 2rem; 
+  }
+}

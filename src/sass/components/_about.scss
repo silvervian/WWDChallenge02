@@ -1,0 +1,52 @@
+.about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr auto 1fr;
+  height: 70rem;
+  background: url(../../img/raspberry.png) 0% 80% no-repeat , radial-gradient(#00C4C4,#00AEAE);
+
+  @media (max-width: 1300px) {
+    grid-template-columns: 1fr auto;
+    background: url(../../img/raspberry.png) -100px -50% no-repeat , radial-gradient(#00C4C4,#00AEAE);
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: auto;
+    background: url(../../img/raspberry.png) -400px 20% no-repeat , radial-gradient(#00C4C4,#00AEAE);
+  }
+
+  @media (max-width:750px) {
+    height: 60rem;
+    background: radial-gradient(#00C4C4,#00AEAE);
+  }
+
+  &__info-box {
+    align-self: center;
+    grid-column: 2 / 3;
+    @media (max-width: 768px) {
+      padding-left: 14rem;
+    }
+    @media (max-width: 425px) {
+      padding-left: 0;
+    }
+
+    // @media (max-width)
+
+    &__paragraph {
+      font-size: 1.7rem;
+      width: 50rem;
+      // max-width: 50rem;
+      line-height: 2.7rem;
+      font-weight: 300;
+      color: #ffffff;
+      font-family: "Raleway";
+
+      @media (max-width: 750px) {
+        padding: 2rem;
+        width: 90%;
+      }
+    }
+  }
+
+}
+

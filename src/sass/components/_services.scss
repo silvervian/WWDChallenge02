@@ -1,0 +1,16 @@
+.services {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background: #70BFFF url(../../img/tomato.png) no-repeat 80% 60%;
+  height: 80rem;
+
+  &__offert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 44rem;
+  }
+}
+

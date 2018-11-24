@@ -10,6 +10,7 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import imagemin from 'gulp-imagemin';
 import changed from 'gulp-changed';
+import sourceMaps from 'gulp-sourcemaps';
 
 const sync = browserSync.create();
 const reload = sync.reload;
@@ -18,10 +19,10 @@ const config = {
     src: {
       html: './src/**/*.html',
       img: './src/img/**.*',
-      sass: ['src/sass/app.scss'],
+      sass: ['./src/sass/app.scss'],
       js: [
-        'src/js/lol.js',
-        'src/js/app.js'
+        './src/js/lol.js',
+        './src/js/app.js'
       ]
     },
     dist: {
@@ -34,11 +35,13 @@ const config = {
 };
 
 gulp.task('sass', () => gulp.src(config.paths.src.sass)
+  .pipe(sourceMaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 5 versions']
   }))
-  .pipe(clean())
+  .pipe(clean({ rebaseTo: './css/' }))
+  .pipe(sourceMaps.write())
   .pipe(gulp.dest(config.paths.dist.css))
   .pipe(sync.stream()));
 
@@ -62,7 +65,20 @@ gulp.task('static', () => {
 gulp.task('image', () => {
   gulp.src(config.paths.src.img)
     .pipe(changed(config.paths.dist.img))
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: false },
+          { cleanupIDs: false },
+          { removeViewBox: false },
+          { removeUselessStrokeAndFill: false },
+          { removeEmptyAttrs: false }
+        ]
+      })
+    ], { verbose: true }))
     .pipe(gulp.dest(config.paths.dist.img));
 
   reload();

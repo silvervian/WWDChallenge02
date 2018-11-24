@@ -12,34 +12,93 @@
 <body>
     <header class="header">
 
-
         <nav class="nav">
             <a href="#" class="logo">Cahee</a>
+            <div class="nav-mobile"></div>
             <ul class="nav__list">
-                <li class="nav__item nav__item--active"><a href="">Home</a></li>
-                <li class="nav__item"><a href="">About</a></li>
-                <li class="nav__item"><a href="">Services</a></li>
-                <li class="nav__item"><a href="">Gallery</a></li>
-                <li class="nav__item"><a href="">Blog</a></li>
-                <li class="nav__item"><a href="">Contact</a></li>
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#about">About</a></li>
+                <li class="nav__item"><a href="#services">Services</a></li>
+                <li class="nav__item"><a href="#gallery">Gallery</a></li>
+                <li class="nav__item"><a href="#blog">Blog</a></li>
+                <li class="nav__item"><a href="#contac">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="info-box">
-            <h1 class="info-box__header">Fresh Life</h1>
-            <p class="info-box__paragraph">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud
-                exercitation
-                ullamco.</p>
-            <div class="btn btn--1">GET FREE NOW</div>
+        <div class="grid-left">
+            <div class="info-box-home">
+                <h1 class="main">Fresh Life</h1>
+                <p class="info-box-home__paragraph">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut
+                    enim
+                    ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco.</p>
+                <div class="btn btn--1">GET FREE NOW</div>
+            </div>
         </div>
 
-        <div class="invisible"></div>
-
-
-
-
     </header>
+
+    <section id="about" class="about">
+        <div class="about__info-box">
+            <h2 class="secondary">About Us</h2>
+            <p class="about__info-box__paragraph">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut
+                aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="secondary">Our Services</h2>
+
+        <div class="services__offert">
+            <div class="services__btn">
+                <div class="services__btn-name">Online Shopping</div>
+                <div class="services__btn-image">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#icon-shop"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="services__btn">
+                <div class="services__btn">
+                    <div class="services__btn-name">Quality Product</div>
+                    <div class="services__btn-image">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#icon-quality"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="services__btn">
+                <div class="services__btn">
+                    <div class="services__btn-name">
+                        Domestic & International Delivery
+                    </div>
+                    <div class="services__btn-image">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#icon-delivery"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="services__btn">
+                <div class="services__btn">
+                    <div class="services__btn-name">Well Organized</div>
+                    <div class="services__btn-image">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#icon-organized"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="./js/app.js"></script>
 </body>
