@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  justify-content: space-between;
+
+  @include media(small) {
+    padding: 3rem 0 3rem;
+  }
+
+  > input {
+    background: rgba(0, 196, 196, 0.452);
+    height: 5rem;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 2rem;
+    line-height: 2.5rem;
+    min-width: 278px;
+    font-weight: 600;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      border-left: 5px solid #355b82;
+      background-color: #00c4c4;
+    }
+  }
+}

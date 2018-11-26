@@ -11,16 +11,36 @@
 
 <body>
 
-    /**
-    * ! HEADER
-    */
-    <header class="header">
+
+    <header id="home" class="header">
+
+        <ul class="menu-hidden">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
 
         <nav class="nav">
             <a href="#" class="logo">Cahee</a>
-            <div class="nav-mobile"></div>
+
+            <div class="nav-mobile">
+                <div class="menu-toggle">
+                    <input class="checkbox" type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
             <ul class="nav__list">
-                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#home">Home</a></li>
                 <li class="nav__item"><a href="#about">About</a></li>
                 <li class="nav__item"><a href="#services">Services</a></li>
                 <li class="nav__item"><a href="#gallery">Gallery</a></li>
@@ -45,9 +65,6 @@
     </header>
 
 
-    /**
-    * ! SECTION ABOUT
-    */
     <section id="about" class="about">
         <div class="about__info-box">
             <h2 class="secondary">About Us</h2>
@@ -62,9 +79,6 @@
     </section>
 
 
-    /**
-    * ! SECTION SERVICES
-    */
     <section id="services" class="services">
         <h2 class="secondary">Our Services</h2>
         <div class="services__offert">
@@ -104,12 +118,39 @@
     </section>
 
 
-    /**
-    * ! SECTION GALLERY
-    */
     <section id="gallery" class="gallery">
 
+
+
     </section>
+
+
+    <section class="contact">
+        <h2 class="secondary secondary--dark">Contact</h2>
+        <p class="contact__text">For new projects, ideas, business or anything<br>
+            you'd like to discuss, contact with me!</p>
+        <form action="#" class="form">
+            <input type="text" name="" id="" placeholder="Your Name...">
+            <input type="email" name="" id="" placeholder="Your email...">
+            <input type="tel" name="" id="" placeholder="Your phone number...">
+            <input type="textarea" name="" id="" placeholder="Your message...">
+        </form>
+        <div class="contact__info">
+            <span>ADDRESS</span>
+            <p>123 City name, Street, City, Country</p>
+            <span>EMAIL</span>
+            <p>cahee@domain.com</p>
+            <span>PHONE</span>
+            <p>+012 345 6789</p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer__rights">© 2015 Company. All right reserved.</p>
+        <p class="footer__logo">Cahee</p>
+        <p class="footer__author">Made with <span>love</span> by Auskteez</p>
+    </footer>
 
     <script src="./js/app.js"></script>
 </body>

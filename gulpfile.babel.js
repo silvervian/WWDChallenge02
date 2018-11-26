@@ -21,7 +21,6 @@ const config = {
       img: './src/img/**.*',
       sass: ['./src/sass/app.scss'],
       js: [
-        './src/js/lol.js',
         './src/js/app.js'
       ]
     },
