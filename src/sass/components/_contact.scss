@@ -4,12 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  min-height: 45rem;
-  padding: 10rem 0 10rem 0;
+  // align-content: center;
+  min-height: 70rem;
+  padding: 10rem 0rem 10rem 0rem;
 
-  @include media(small) {
-    padding: 5rem;
-    min-height: 60rem;
+  @include media(medium) {
+    padding: 5rem 0 5rem 0;
+    min-height: 65rem;
   }
 
 
@@ -24,9 +25,13 @@
   }
 
   &__info {
-    flex-basis: 30%;
+    flex-basis: 40%;
     min-width: 290px;
-    padding: 0 5rem;
+    // padding: 0 5rem;
+
+    @media (max-width: 880px) {
+      padding: 0;
+    }
 
     span {
       font-weight: 600;

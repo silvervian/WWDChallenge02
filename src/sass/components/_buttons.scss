@@ -16,6 +16,12 @@
   &--1 {
     background-color: #ff6033;
   }
+
+  &--4 {
+    background-color: #f72b3b;;
+    // flex-basis: 100%;
+    align-self: flex-end;
+  }
 }
 
 .services__btn {
