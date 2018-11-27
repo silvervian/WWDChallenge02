@@ -5,6 +5,11 @@
   grid-template-rows: repeat(5, auto);
   grid-gap: 2rem;
   padding: 2rem 0;
+  justify-content: center;
+
+  @include media(xsmall) {
+    grid-template-columns: 1fr 90% 1fr;
+  }
 
   &__heading {
     grid-column: 1 / -1;
@@ -17,7 +22,7 @@
     justify-self: center;
     width: 50%;
 
-    @include media(small) {
+    @include media(xsmall) {
       width: 90%;
     }
   }
@@ -31,13 +36,17 @@
 
   &__item {
 
-    @include media(small) {
-      grid-column: 2 / 6 !important;
+    @include media(xsmall) {
+      grid-column: 2 / 3 !important;
     }
 
     &--1 {
       grid-column: 2 / span 3;
       grid-row: 3 / 5;
+
+      @include media(small) {
+        // grid-row: 1 / 2;
+      }
     }
     &--2 {
       grid-column: 5 / 6;
