@@ -3,10 +3,11 @@
 *::after {
 margin: 0;
 padding: 0;
+box-sizing: inherit;
 }
 
 html {
-    box-sizing: inherit;
+    box-sizing: border-box;
     // This defines what 1rem is
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
@@ -31,7 +32,7 @@ html {
 }
 
 a {
-  &:link, &:visited, &:hover, &:active {
+  &:link, &:visited, &:hover, &:active, &:focus {
     color: black;
     text-decoration: none;
     outline: none;
@@ -39,8 +40,8 @@ a {
 }
 
 .icon {
-    width: 6rem;
-    height: 6rem;
+    width: 10rem;
+    height: 10rem;
     padding: 2rem;
 }
 

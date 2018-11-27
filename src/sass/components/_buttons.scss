@@ -7,6 +7,7 @@
   padding: 1.5rem 2rem;
   cursor: pointer;
   transition: all .1s;
+  text-transform: uppercase;
 
   &:active {
     transform: translateY(3px);
@@ -15,6 +16,16 @@
 
   &--1 {
     background-color: #ff6033;
+  }
+
+  &--2 {
+    background-color: #5585a2;
+  }
+
+  &--3 {
+    font-size: 2rem;
+    // line-height: 2.7rem;
+    background-color: #96b92c;
   }
 
   &--4 {

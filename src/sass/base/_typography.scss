@@ -36,6 +36,36 @@ html {
   }
 }
 
+.subscribe {
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 2.7rem;
+    color: #262626;
+    font-weight: 600;
+  }
+
+  &__text {
+      font-size: 1.7rem;
+      line-height: 2.7rem;
+      color: #262626;
+      font-weight: 300;
+    }
+
+  &__email {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    color: rgb(8, 8, 8);
+    
+    &::placeholder {
+      color: #262626;
+      font-weight: 300;
+    }
+  }
+}
+
 .contact {
   font-size: 1.7rem;
 }

@@ -1,0 +1,33 @@
+.subscribe {
+  background: url(../../img/subscribe-bg.png) no-repeat bottom right / contain;
+  padding: 10rem;
+
+  @include media(small) {
+    padding: 5rem;
+  }
+
+  @media (max-width:500px) {
+    padding: 2rem;
+  }
+
+  &__text {
+    width: 50%;
+    margin: 2rem 0;
+
+    @include media(small) {
+      width: 80%;
+    }
+  }
+
+  &__email {
+    width: 50%;
+    min-width: 30rem;
+    height: 5.5rem;
+    background-color: #fff;
+    border: 1px solid #262626;
+    outline: none;
+    margin: 2rem 2rem 2rem 0;
+    padding-left: 2rem;
+    // font-family: serif;
+  }
+}
