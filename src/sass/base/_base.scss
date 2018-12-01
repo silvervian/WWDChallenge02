@@ -19,11 +19,11 @@ html {
     }
 
     @include media(small) { // width < 900?
-        font-size: 50%; //1 rem = 8px, 8/16 = 80%
+        font-size: 56.25%; //1 rem = 8px, 8/16 = 80%
     }
 
     @include media(xsmall) { // width < 900?
-        font-size: 50%; //1 rem = 8px, 8/16 = 80%
+        font-size: 56.25%; //1 rem = 8px, 8/16 = 80%
     }
     
     @include media(bdesktop) {
