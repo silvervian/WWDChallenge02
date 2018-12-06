@@ -49,7 +49,7 @@ gulp.task('js', () => {
   gulp.src(config.paths.src.js)
     .pipe(babel({ presets: ['env'] }))
     .pipe(concat('app.js'))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(config.paths.dist.js));
 
   reload();
