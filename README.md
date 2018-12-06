@@ -1,3 +1,3 @@
 # Gulp-Config
 
-Simple gulp configuration with browsersync 
+# LIVE: https://silvervian.github.io/WWDChallenge02/dist/

@@ -1,6 +1,8 @@
+
 @import 'base/mixins';
 @import 'base/base';
 @import 'base/typography';
+@import 'base/animations';
 
 @import 'components/menuToggle';
 @import 'components/buttons';
@@ -13,3 +15,5 @@
 @import 'components/contact';
 @import 'components/form';
 @import 'components/footer';
+
+@import 'vendors/lightbox.css';

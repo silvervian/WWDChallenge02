@@ -5,9 +5,13 @@
   align-items: baseline;
   padding: 2.5rem 0 2.5rem 0;
 
-  @media (max-width: 425px) {
+  @include media(small) {
     flex-direction: column-reverse;
     align-items: center;
+
+    p {
+      padding: 1rem 0;
+    }
   }
 
 

@@ -1,0 +1,12 @@
+@keyframes expand {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes shrink {
+  to {
+    opacity: 0;
+  }
+}
