@@ -27,14 +27,13 @@ function elem(post, day, month, author, title) {
 
 viewMoreBlog.addEventListener('click', () => {
   if (viewMoreBlog.innerText === 'VIEW MORE') {
-    sectionBlog.classList.add('animate');
     elem(4, 6, 'DEC', 'Adijos', 'What a lovely Day is Today what do you think?');
     elem(5, 12, 'DEC', 'Adijos', 'What a lovely Day is Today what do you think?');
     elem(6, 25, 'DEC', 'Adijos', 'What a lovely Day is Today what do you think?');
     viewMoreBlog.innerText = 'Hide Posts';
   } else {
-    const kidsNodes = sectionBlog.childNodes;
     sectionBlog.classList.remove('animate');
+    const kidsNodes = sectionBlog.childNodes;
     for (let i = 12; i >= 10; i--) {
       kidsNodes[i].remove();
     }
