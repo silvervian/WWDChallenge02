@@ -1,6 +1,7 @@
 /* eslint-disable no-cond-assign */
 /* eslint-disable func-names,no-undef */
 
+
 const hiddenMenu = document.querySelector('.menu-hidden');
 const checkBox = document.querySelector('.checkbox');
 const menuList = document.querySelectorAll('.menu-hidden li');
@@ -8,6 +9,7 @@ const viewMoreBlog = document.querySelector('#viewMoreBlog');
 const sectionBlog = document.querySelector('.blog');
 const blogPost = document.querySelectorAll('.blog__post');
 const test = document.querySelector('#test');
+
 
 function elem(post, day, month, author, title) {
   const blogPost4 = document.createElement('div');
@@ -25,12 +27,14 @@ function elem(post, day, month, author, title) {
 
 viewMoreBlog.addEventListener('click', () => {
   if (viewMoreBlog.innerText === 'VIEW MORE') {
+    sectionBlog.classList.add('animate');
     elem(4, 6, 'DEC', 'Adijos', 'What a lovely Day is Today what do you think?');
     elem(5, 12, 'DEC', 'Adijos', 'What a lovely Day is Today what do you think?');
     elem(6, 25, 'DEC', 'Adijos', 'What a lovely Day is Today what do you think?');
     viewMoreBlog.innerText = 'Hide Posts';
   } else {
     const kidsNodes = sectionBlog.childNodes;
+    sectionBlog.classList.remove('animate');
     for (let i = 12; i >= 10; i--) {
       kidsNodes[i].remove();
     }

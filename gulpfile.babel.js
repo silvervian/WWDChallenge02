@@ -22,7 +22,7 @@ const config = {
       sass: ['./src/sass/app.scss'],
       js: [
         './src/js/app.js'
-        // './src/js/lightbox-plus-jquery.js'
+        // './src/js/lightbox.js'
       ]
     },
     dist: {

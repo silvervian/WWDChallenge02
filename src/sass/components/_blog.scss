@@ -4,9 +4,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10rem 0;
-  // height: 80rem;
-  max-height: auto;
-  transition: all 2s ease-out;
+  height: auto;
+  max-height: 200rem;
+  // max-height: auto;
+  transition: all .7s ease-in;
+  overflow: hidden;
+  backface-visibility: hidden;
   // min-height: 85rem;
 
 
@@ -137,4 +140,8 @@
   flex-basis: 100%;
   text-align: center;
 }
+}
+
+.animate {
+  max-height: 300rem;
 }
