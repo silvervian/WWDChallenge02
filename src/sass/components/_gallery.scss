@@ -1,11 +1,12 @@
 .gallery {
+  margin-top: -8rem;
   background: #ffe92f;
   display: grid;
   grid-template-columns: 1fr repeat(4, 20%) 1fr;
   grid-template-rows: repeat(5, auto);
   grid-gap: 2rem;
-  padding: 2rem 0;
-  justify-content: center;
+  padding: 10rem 0 7rem 0;
+  // justify-content: center;
 
   @include media(xsmall) {
     grid-template-columns: 1fr 90% 1fr;
@@ -35,6 +36,15 @@
   }
 
   &__item {
+    transition: all .2s;
+    filter: grayscale(30%);
+
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.02) rotate(-.5deg);
+      box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.7);
+      // z-index: 122;
+    }
 
     @include media(xsmall) {
       grid-column: 2 / 3 !important;
@@ -58,6 +68,18 @@
       grid-column: 2 / span 2;
     }
     &--5 {
+      grid-column: 4 / span 2;
+    }
+    &--6 {
+      grid-column: 2 / span 2;
+    }
+    &--7 {
+      grid-column: 4 / span 2;
+    }
+    &--8 {
+      grid-column: 2 / span 2;
+    }
+    &--9 {
       grid-column: 4 / span 2;
     }
   }

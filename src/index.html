@@ -13,15 +13,15 @@
 <body>
 
 
-	<header id="home" class="header">
+	<header id="home" class="header SpyScroll">
 
 		<ul class="menu-hidden">
-			<li><a href="#home">HOME</a></li>
-			<li><a href="#about">ABOUT</a></li>
-			<li><a href="#services">SERVICES</a></li>
-			<li><a href="#gallery">GALLERY</a></li>
-			<li><a href="#blog">BLOG</a></li>
-			<li><a href="#contact">CONTACT</a></li>
+			<li class="mobile"><a class="is-active2" href="#home">HOME</a></li>
+			<li class="mobile"><a href="#about">ABOUT</a></li>
+			<li class="mobile"><a href="#services">SERVICES</a></li>
+			<li class="mobile"><a href="#gallery">GALLERY</a></li>
+			<li class="mobile"><a href="#blog">BLOG</a></li>
+			<li class="mobile"><a href="#contact">CONTACT</a></li>
 		</ul>
 
 
@@ -41,12 +41,12 @@
 			</div>
 
 			<ul class="nav__list">
-				<li class="nav__item"><a href="#home">Home</a></li>
-				<li class="nav__item"><a href="#about">About</a></li>
-				<li class="nav__item"><a href="#services">Services</a></li>
-				<li class="nav__item"><a href="#gallery">Gallery</a></li>
-				<li class="nav__item"><a href="#blog">Blog</a></li>
-				<li class="nav__item"><a href="#contact">Contact</a></li>
+				<li class="nav__item"><a class="nav__link is-active" href="#home">Home</a></li>
+				<li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+				<li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+				<li class="nav__item"><a class="nav__link" href="#gallery">Gallery</a></li>
+				<li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
+				<li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -66,7 +66,7 @@
 	</header>
 
 
-	<section id="about" class="about">
+	<section id="about" class="about SpyScroll">
 		<div class="about__info-box">
 			<h2 class="secondary">About Us</h2>
 			<p class="about__info-box__paragraph">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -80,7 +80,7 @@
 	</section>
 
 
-	<section id="services" class="services">
+	<section id="services" class="services SpyScroll">
 		<h2 class="secondary">Our Services</h2>
 		<div class="services__offert">
 			<div class="services__btn">
@@ -119,32 +119,32 @@
 	</section>
 
 
-	<section id="gallery" class="gallery">
+	<section id="gallery" class="gallery SpyScroll">
 		<h1 class="secondary  secondary--dark gallery__heading">Gallery</h1>
 		<p class="gallery__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 			magna aliqua. Ut enim ad minim
 			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<figure class="gallery__item gallery__item--1">
-			<a class="example-image-link" href="img/img-1.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
-				 class="gallery__img example-image" src="img/img-1.png" alt="" /></a>
+			<a class="example-image-link" href="img/img-1.jpg" data-lightbox="example-set" data-title="Foooood is Gooooood."><img
+				 class="gallery__img example-image" src="img/img-1.jpg" alt="" /></a>
 		</figure>
 		<figure class="gallery__item gallery__item--2">
-			<a class="example-image-link" href="img/img-2.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
-				 class="gallery__img example-image" src="img/img-2.png" alt="" /></a>
+			<a class="example-image-link" href="img/img-2.jpg" data-lightbox="example-set" data-title="Foooood is Gooooood."><img
+				 class="gallery__img example-image" src="img/img-2.jpg" alt="" /></a>
 		</figure>
 		<figure class="gallery__item gallery__item--3">
-			<a class="example-image-link" href="img/img-3.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
-				 class="gallery__img example-image" src="img/img-3.png" alt="" /></a>
+			<a class="example-image-link" href="img/img-3.jpg" data-lightbox="example-set" data-title="Foooood is Gooooood."><img
+				 class="gallery__img example-image" src="img/img-3.jpg" alt="" /></a>
 		</figure>
 		<figure class="gallery__item gallery__item--4">
-			<a class="example-image-link" href="img/img-4.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
-				 class="gallery__img example-image" src="img/img-4.png" alt="" /></a>
+			<a class="example-image-link" href="img/img-4.jpg" data-lightbox="example-set" data-title="Foooood is Gooooood."><img
+				 class="gallery__img example-image" src="img/img-4.jpg" alt="" /></a>
 		</figure>
 		<figure class="gallery__item gallery__item--5">
-			<a class="example-image-link" href="img/img-5.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
-				 class="gallery__img example-image" src="img/img-5.png" alt="" /></a>
+			<a class="example-image-link" href="img/img-5.jpg" data-lightbox="example-set" data-title="Foooood is Gooooood."><img
+				 class="gallery__img example-image" src="img/img-5.jpg" alt="" /></a>
 		</figure>
-		<div class="btn btn--2 gallery__btn">View More</div>
+		<div id="moreGallery" class="btn btn--2 gallery__btn">View More</div>
 	</section>
 
 	<section class="subscribe" id="subscribe">
@@ -158,7 +158,7 @@
 		</div>
 	</section>
 
-	<section class="blog" id="blog">
+	<section class="blog SpyScroll" id="blog">
 		<h2 class="secondary blog__heading">Blog</h2>
 		<p class="blog__text">Dolore magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco
 			laboris
@@ -193,7 +193,7 @@
 	</section>
 
 
-	<section class="contact" id="contact">
+	<section class="contact SpyScroll" id="contact">
 		<h2 class="secondary secondary--dark">Contact</h2>
 		<p class="contact__text">For new projects, ideas, business or anything<br>
 			you'd like to discuss, contact with me!</p>
