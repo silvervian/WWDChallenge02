@@ -107,12 +107,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 
 function functionScroll() {
-  const section = document.querySelectorAll('.SpyScroll');
+  const section = document.querySelectorAll('[data-scrollspy]');
 
   const sections = {};
   let i = 0;
 
-  Array.prototype.forEach.call(section, (e) => {
+  [...section].forEach((e) => {
     sections[e.id] = e.offsetTop;
   });
 
