@@ -14,5 +14,14 @@
     }
   }
 
+  a {
+    color: inherit;
+    transition: .2s;
+
+    &:hover {
+      color: #ff2b58;
+    }
+  }
+
 
 }
